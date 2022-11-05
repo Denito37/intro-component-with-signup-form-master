@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+
+  <main>
+    <header>
+      Learn to code by watching others
+    </header>
+    <p>
+      See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable. 
+    </p>
+  </main>
+
+  <section>
+    <button class="try">
+    <span> Try it free 7 days</span> then $20/mo. thereafter
+    </button> 
+
+    <form action="#">
+      <fieldset>
+      <label for="first name">
+        <input  class="firstName" type="text" placeholder="First Name" id="first name">
+        <img class="error" src="images/icon-error.svg" alt="error-icon">
+      </label> 
+      <label for="last name">
+        <input class="lastName"  type="text" placeholder="Last Name" id="last name"> 
+        <img class="error" src="images/icon-error.svg" alt="error-icon">
+      </label>
+      <label for="email">
+        <input class="email" type="email" placeholder="Email Address" id="email">
+        <img class="error" src="images/icon-error.svg" alt="error-icon">
+      </label>
+      <label for="password">
+        <input class="password" type="password" placeholder="Password" id="password">
+        <img class="error" src="images/icon-error.svg" alt="error-icon">
+      </label>
+
+      <button class="claim" onclick="errorMsg()">
+        Claim your free trial 
+      </button>
+      <p>
+        By clicking the button, you are agreeing to our <span> Terms and Services</span>
+      </p>
+    </fieldset>
+    </form>
+</section>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Denito37</a>.
+    </p>
+  </footer>
+
+  <script src="index.js"></script>
+
+</body>
+</html>

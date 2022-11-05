@@ -1,0 +1,129 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import url(https://fonts.google.com/specimen/Poppins);
+
+:root{
+    --bg-color:hsl(0, 100%, 74%);
+    --btn-color:hsl(248, 32%, 49%);
+    --btn2-color:hsl(154, 59%, 51%);
+    --plchld-text:hsl(249, 10%, 26%);
+    --sml-text:hsl(246, 25%, 77%);
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    background: url(images/bg-intro-mobile.png) no-repeat var(--bg-color);
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    color: white;
+    text-align: center;
+    margin: 2rem 0;
+    line-height: 1.5;
+}
+main header{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 2rem;
+}
+.try{
+    background-color: var(--btn-color);
+    color: white;
+    width: 93%;
+    font-size: 1rem;
+    padding: 1.75rem 0rem;
+    margin: 1rem 1rem;
+    border: solid 0px;
+    border-radius: 12px;
+}
+.try span{
+    font-weight: 700;
+}
+fieldset{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: solid 0px;
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 0rem 1rem;
+}
+fieldset input{
+    width: 85%;
+    padding:1.33rem 1rem ;
+    margin: .5rem 0rem;
+    border: solid var(--sml-text);
+    border-radius: 12px;
+}
+fieldset input:invalid{
+    border: solid var(--bg-color);
+}
+::placeholder {
+    color: var(--plchld-text);
+    font-weight: 700;
+}
+.error{
+    visibility: hidden;
+    position: relative;
+    left: 8rem;
+    bottom: 3.3rem;
+}
+fieldset button{
+    color: white;
+    font-size: 1.2rem;
+    text-transform:uppercase ;
+    background: var(--btn2-color);
+    border-radius: 12px;
+    padding: 1.33rem 0;
+    margin: 1rem 1rem;
+    border: solid 0;
+}
+fieldset button:hover{
+    filter: brightness(1.1);
+}
+fieldset p{
+    color: var(--sml-text);
+    font-size: .8rem;
+}
+fieldset p span{
+    color: var(--bg-color);
+    font-weight: 600;
+}
+
+@media only screen and (min-width:769px){
+    body{
+        background: url(images/bg-intro-desktop.png) no-repeat var(--bg-color);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 6.8rem;
+    }
+    main{
+        justify-self: center;
+        align-self: center;
+        margin: 0rem 6rem;
+        text-align: left;
+    }
+    main header{
+        margin: 0;
+        font-size: 3rem;
+        line-height: 1;
+    }
+    fieldset{
+        margin-right: 2rem;
+    }
+    .error{
+        position: relative;
+        left: -4rem;
+        top: .4rem;
+
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        margin-right: 4rem;
+    }
+}
