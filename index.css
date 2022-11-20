@@ -10,7 +10,7 @@
     --plchld-text:hsl(249, 10%, 26%);
     --sml-text:hsl(246, 25%, 77%);
 }
-/*GENERAl*/
+/* *GENERAl */
 body{
     margin: 0;
     box-sizing: border-box;
@@ -20,7 +20,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-/*MAIN*/
+/* *MAIN */
 main{
     color: white;
     text-align: center;
@@ -32,7 +32,7 @@ main header{
     font-weight: 700;
     margin: 1rem 2rem;
 }
-/*SECTION*/
+/* *SECTION-Form */
 .try{
     background-color: var(--btn-color);
     color: white;
@@ -55,6 +55,9 @@ fieldset{
     border-radius: 12px;
     padding: 1rem;
     margin: 0rem 1rem;
+}
+label{
+    max-height: 100px;
 }
 fieldset input{
     width: 90%;
@@ -88,7 +91,12 @@ fieldset button{
 fieldset button:hover{
     filter: brightness(1.1);
 }
-fieldset p{
+fieldset label p{
+    color: var(--bg-color);
+    position: relative;
+    bottom: 40px;
+}
+fieldset .term{
     color: var(--sml-text);
     font-size: .8rem;
 }
@@ -96,13 +104,10 @@ fieldset p span{
     color: var(--bg-color);
     font-weight: 600;
 }
-#errorMsg{
-    color: var(--bg-color);
-}
 .hidden{
     display: none;
 }
-
+/* *desktop */
 @media only screen and (min-width:769px){
     body{
         background: url(images/bg-intro-desktop.png) no-repeat var(--bg-color);

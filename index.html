@@ -31,10 +31,12 @@
       <label for="first name">
         <input  id="firstName" type="text" placeholder="First Name" id="first name" >
         <img id="first-error" src="images/icon-error.svg" alt="error-icon">
+        <p id="fnErrorMsg"></p>
       </label> 
       <label for="last name">
         <input id="lastName"  type="text" placeholder="Last Name" id="last name" > 
         <img id="last-error" src="images/icon-error.svg" alt="error-icon">
+        <p id="lnErrorMsg"></p>
       </label>
       <label for="email">
         <input id="email" type="email" placeholder="Email Address" id="email" >
@@ -44,12 +46,13 @@
       <label for="password">
         <input id="password" type="password" placeholder="Password" id="password" >
         <img id="password-error" src="images/icon-error.svg" alt="error-icon">
+        <p id="pwErrorMsg"></p>
       </label>
 
       <button id="claim" type="submit">
         Claim your free trial 
       </button>
-      <p>
+      <p class="terms">
         By clicking the button, you are agreeing to our <span> Terms and Services</span>
       </p>
     </fieldset>
