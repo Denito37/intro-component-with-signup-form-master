@@ -10,14 +10,17 @@
     --plchld-text:hsl(249, 10%, 26%);
     --sml-text:hsl(246, 25%, 77%);
 }
-
+/*GENERAl*/
 body{
+    margin: 0;
+    box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
     background: url(images/bg-intro-mobile.png) no-repeat var(--bg-color);
     background-size: 100%;
     display: flex;
     flex-direction: column;
 }
+/*MAIN*/
 main{
     color: white;
     text-align: center;
@@ -29,10 +32,11 @@ main header{
     font-weight: 700;
     margin: 1rem 2rem;
 }
+/*SECTION*/
 .try{
     background-color: var(--btn-color);
     color: white;
-    width: 93%;
+    width: 95%;
     font-size: 1rem;
     padding: 1.75rem 0rem;
     margin: 1rem 1rem;
@@ -53,24 +57,23 @@ fieldset{
     margin: 0rem 1rem;
 }
 fieldset input{
-    width: 85%;
+    width: 90%;
     padding:1.33rem 1rem ;
     margin: .5rem 0rem;
     border: solid var(--sml-text);
     border-radius: 12px;
 }
-fieldset input:invalid{
-    border: solid var(--bg-color);
-}
 ::placeholder {
     color: var(--plchld-text);
     font-weight: 700;
 }
-.error{
-    visibility: hidden;
+#first-error, #last-error,#email-error,#password-error{
     position: relative;
     left: 8rem;
     bottom: 3.3rem;
+}
+fieldset input:invalid{
+    border: solid var(--bg-color);
 }
 fieldset button{
     color: white;
@@ -93,6 +96,12 @@ fieldset p span{
     color: var(--bg-color);
     font-weight: 600;
 }
+#errorMsg{
+    color: var(--bg-color);
+}
+.hidden{
+    display: none;
+}
 
 @media only screen and (min-width:769px){
     body{
@@ -112,14 +121,15 @@ fieldset p span{
         font-size: 3rem;
         line-height: 1;
     }
+    .try{
+        width: 93%;
+    }
     fieldset{
         margin-right: 2rem;
     }
-    .error{
+    #first-error, #last-error,#email-error,#password-error{
         position: relative;
-        left: -4rem;
-        top: .4rem;
-
+        left: 12rem;
     }
     section{
         display: flex;

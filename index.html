@@ -26,26 +26,27 @@
     <span> Try it free 7 days</span> then $20/mo. thereafter
     </button> 
 
-    <form action="#">
+    <form action="/" id="form">
       <fieldset>
       <label for="first name">
-        <input  class="firstName" type="text" placeholder="First Name" id="first name">
-        <img class="error" src="images/icon-error.svg" alt="error-icon">
+        <input  id="firstName" type="text" placeholder="First Name" id="first name" >
+        <img id="first-error" src="images/icon-error.svg" alt="error-icon">
       </label> 
       <label for="last name">
-        <input class="lastName"  type="text" placeholder="Last Name" id="last name"> 
-        <img class="error" src="images/icon-error.svg" alt="error-icon">
+        <input id="lastName"  type="text" placeholder="Last Name" id="last name" > 
+        <img id="last-error" src="images/icon-error.svg" alt="error-icon">
       </label>
       <label for="email">
-        <input class="email" type="email" placeholder="Email Address" id="email">
-        <img class="error" src="images/icon-error.svg" alt="error-icon">
+        <input id="email" type="email" placeholder="Email Address" id="email" >
+        <img id="email-error" src="images/icon-error.svg" alt="error-icon">
+          <p id="errorMsg"></p>
       </label>
       <label for="password">
-        <input class="password" type="password" placeholder="Password" id="password">
-        <img class="error" src="images/icon-error.svg" alt="error-icon">
+        <input id="password" type="password" placeholder="Password" id="password" >
+        <img id="password-error" src="images/icon-error.svg" alt="error-icon">
       </label>
 
-      <button class="claim" onclick="errorMsg()">
+      <button id="claim" type="submit">
         Claim your free trial 
       </button>
       <p>
